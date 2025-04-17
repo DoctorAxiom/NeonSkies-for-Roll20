@@ -1,0 +1,110 @@
+<svg width="400px" height="600px" version="1.1" viewBox="0 0 76.577 104.14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <marker id="marker2" overflow="visible" markerHeight="0.8" markerWidth="0.8" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Dot" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Dot-2" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Dot-2-3" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Dot-2-8" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Dot-7" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Dot-7-2" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <linearGradient id="linearGradient5" x1="558.46" x2="668.26" y1="232.87" y2="232.87" gradientTransform="matrix(.26458 0 0 .26458 -32.582 -.15289)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient4"/>
+  <linearGradient id="linearGradient4">
+   <stop offset="0"/>
+   <stop stop-color="#b2b2b2" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient6" x1="558.46" x2="668.26" y1="232.87" y2="232.87" gradientTransform="matrix(.26458 0 0 .26458 -32.582 15.887)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient4"/>
+  <linearGradient id="linearGradient7" x1="558.46" x2="668.26" y1="232.87" y2="232.87" gradientTransform="matrix(.26458 0 0 .26458 -32.582 31.927)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient4"/>
+  <marker id="marker2-2" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="marker2-8" overflow="visible" markerHeight="0.80000001" markerWidth="0.80000001" orient="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5 0c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.3-5 5-5c2.76 0 5 2.24 5 5z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+ </defs>
+ <g transform="translate(-68.527 -6.0854)">
+  <path d="m117.91 104.28c0.16635-1.7954 0.0749-3.0108 0.0196-4.3076-0.25415-3.6344-0.79966-5.0836-1.1995-7.6254-0.15447-2.0034-0.0945-3.9136-0.0431-5.0245-6e-3 -0.71655 0.0844-1.318 0.48352-1.5487 0.31204 0.35296 0.28388 1.3863 0.37328 2.1845 0.0454-0.50557 0.65245 3.5054 1.2426 5.7595 0.55641 2.1252 1.7992 6.3402 1.7992 6.3402l-0.32301 2.6165c-0.0701 1.7384-0.0715 3.5752 0.072 5.5781 0.10748 0.54106 0.51703 0.24062 0.7771 0.17135 0.0126 0.30995 0.0919 0.64862 0.22648 0.91791 0.20836 0.40518 0.42091 0.34801 0.78965 0.31215l0.42838 0.25704c0.85496 0.25903 0.96216-0.33652 1.2852-0.68543 0.4218 0.11245 0.76506-0.17374 1.0171-0.56019 0.1898-0.408 0.55408-2.6602 0.86918-4.0757l0.39541-0.11867c0.30497 0.29313 2.0072 1.2375 1.9487 0.34271-0.0198-0.30246-0.90526-1.1686-1.6258-2.1316-0.78017-1.0427-1.2712-2.1233-2.3846-3.2299 0 0 0.11276-4.5197-0.1037-6.9955-0.19025-2.1761-1.1018-6.7009-1.1018-6.7009 0.28668-1.8879 0.0945-6.6124-0.67535-9.5009-0.39097-1.3446-1.0099-2.2966-2.4484-3.1556-3.3803-1.6746-7.9167-2.0373-9.5904-3.9205-0.0756-0.72563 0.16153-1.3418 0.27023-1.9316 0.34976-1.8976 1.7011-2.8217 1.8266-6.1556 0.0978-2.5981-1.9518-4.5125-5.0723-4.5125s-5.1701 1.9145-5.0723 4.5125c0.12552 3.334 1.4769 4.2581 1.8266 6.1556 0.10871 0.58978 0.34581 1.2059 0.27023 1.9316-1.6738 1.8832-6.2102 2.2459-9.5905 3.9205-1.4385 0.85894-2.0574 1.8109-2.4484 3.1556-0.76981 2.8885-0.96203 7.613-0.67535 9.5009 0 0-0.91155 4.5249-1.1018 6.7009-0.21646 2.4759-0.10371 6.9955-0.10371 6.9955-1.1133 1.1066-1.6044 2.1872-2.3846 3.2299-0.72053 0.96302-1.606 1.8292-1.6258 2.1316-0.05849 0.89478 1.6437-0.0496 1.9487-0.34271l0.3954 0.11867c0.31511 1.4155 0.67938 3.6677 0.86918 4.0757 0.25202 0.38645 0.59528 0.67264 1.0171 0.56019 0.32301 0.34891 0.43021 0.94446 1.2852 0.68543l0.42839-0.25704c0.36874 0.0359 0.58129 0.093 0.78965-0.31215 0.13458-0.26929 0.21386-0.60796 0.22648-0.91791 0.26006 0.0693 0.66962 0.36971 0.7771-0.17135 0.14348-2.0029 0.14209-3.8397 0.07201-5.5781l-0.32301-2.6165s1.2428-4.215 1.7992-6.3402c0.59013-2.254 1.1972-6.265 1.2426-5.7595 0.0894-0.79824 0.06124-1.8316 0.37328-2.1845 0.3991 0.23073 0.48926 0.83217 0.48352 1.5487 0.05137 1.1108 0.11138 3.021-0.04309 5.0245-0.39983 2.5418-0.94534 3.991-1.1995 7.6254-0.05526 1.2969-0.14674 2.5122 0.01961 4.3076" fill="none" stroke="#999" stroke-linecap="square" stroke-linejoin="round" stroke-width=".52917" style="paint-order:fill markers stroke"/>
+  <g transform="matrix(.26458 0 0 .26458 -32.397 .021575)" fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="round" stroke-width="2">
+   <path d="m552.2 106.13c4.0298 2.5329 7.6418 5.6695 10.709 9.283l-12.603 10.176c4.6096 5.2905 7.4012 12.206 7.4012 19.774" marker-end="url(#Dot)" style="paint-order:fill markers stroke"/>
+   <path d="m497.53 121.25c7.0627-8.7912 17.903-14.418 30.057-14.418 21.282 0 38.535 17.253 38.535 38.535s-17.253 38.535-38.535 38.535c-21.282 0-38.535-17.253-38.535-38.535 0-6.0767 1.4066-11.825 3.9119-16.937l-6.7738-3.8369c3.576-7.1122 8.931-13.176 15.481-17.607" marker-end="url(#Dot)" marker-start="url(#Dot)" style="paint-order:fill markers stroke"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="round" stroke-width="2.2612">
+   <g transform="matrix(.12313 0 0 .12313 42.151 43.763)">
+    <path d="m552.2 106.13c4.0298 2.5329 7.6418 5.6695 10.709 9.283l-12.603 10.176c4.6096 5.2905 7.4012 12.206 7.4012 19.774" marker-end="url(#Dot-2)" style="paint-order:fill markers stroke"/>
+    <path d="m497.53 121.25c7.0627-8.7912 17.903-14.418 30.057-14.418 21.282 0 38.535 17.253 38.535 38.535s-17.253 38.535-38.535 38.535c-21.282 0-38.535-17.253-38.535-38.535 0-6.0767 1.4066-11.825 3.9119-16.937l-6.7738-3.8369c3.576-7.1122 8.931-13.176 15.481-17.607" marker-end="url(#Dot-2)" marker-start="url(#Dot-2)" style="paint-order:fill markers stroke"/>
+   </g>
+   <g transform="matrix(.12313 0 0 .12313 42.193 59.802)">
+    <path d="m552.2 106.13c4.0298 2.5329 7.6418 5.6695 10.709 9.283l-12.603 10.176c4.6096 5.2905 7.4012 12.206 7.4012 19.774" marker-end="url(#Dot-2-3)" style="paint-order:fill markers stroke"/>
+    <path d="m497.53 121.25c7.0627-8.7912 17.903-14.418 30.057-14.418 21.282 0 38.535 17.253 38.535 38.535s-17.253 38.535-38.535 38.535c-21.282 0-38.535-17.253-38.535-38.535 0-6.0767 1.4066-11.825 3.9119-16.937l-6.7738-3.8369c3.576-7.1122 8.931-13.176 15.481-17.607" marker-end="url(#Dot-2-3)" marker-start="url(#Dot-2-3)" style="paint-order:fill markers stroke"/>
+   </g>
+   <g transform="matrix(.12313 0 0 .12313 42.176 75.842)">
+    <path d="m552.2 106.13c4.0298 2.5329 7.6418 5.6695 10.709 9.283l-12.603 10.176c4.6096 5.2905 7.4012 12.206 7.4012 19.774" marker-end="url(#Dot-2-8)" style="paint-order:fill markers stroke"/>
+    <path d="m497.53 121.25c7.0627-8.7912 17.903-14.418 30.057-14.418 21.282 0 38.535 17.253 38.535 38.535s-17.253 38.535-38.535 38.535c-21.282 0-38.535-17.253-38.535-38.535 0-6.0767 1.4066-11.825 3.9119-16.937l-6.7738-3.8369c3.576-7.1122 8.931-13.176 15.481-17.607" marker-end="url(#Dot-2-8)" marker-start="url(#Dot-2-8)" style="paint-order:fill markers stroke"/>
+   </g>
+  </g>
+  <g transform="matrix(.26458 0 0 .26458 -4.9473 .021575)" fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="round" stroke-width="2">
+   <path d="m552.2 106.13c4.0298 2.5329 7.6418 5.6695 10.709 9.283l-12.603 10.176c4.6096 5.2905 7.4012 12.206 7.4012 19.774" marker-end="url(#Dot-7)" style="paint-order:fill markers stroke"/>
+   <path d="m497.53 121.25c7.0627-8.7912 17.903-14.418 30.057-14.418 21.282 0 38.535 17.253 38.535 38.535s-17.253 38.535-38.535 38.535c-21.282 0-38.535-17.253-38.535-38.535 0-6.0767 1.4066-11.825 3.9119-16.937l-6.7738-3.8369c3.576-7.1122 8.931-13.176 15.481-17.607" marker-end="url(#Dot-7)" marker-start="url(#Dot-7)" style="paint-order:fill markers stroke"/>
+  </g>
+  <g font-family="'Exo 2', sans-serif" stroke-width=".26458" text-anchor="end">
+   <text x="79.272079" y="33.333725" font-size="4px" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="79.272079" y="33.333725" font-family="'Exo 2', sans-serif" stroke-width=".2" stroke="#000" fill="#FFF" text-align="center" text-anchor="middle">CYBER</tspan></text>
+   <g font-size="2.1107px">
+    <text x="79.392059" y="24.985651" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="79.392059" y="24.985651" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">BURN</tspan></text>
+    <text x="107.12462" y="56.162701" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="107.12462" y="56.162701" font-family="'Exo 2', sans-serif" stroke-width=".2" stroke="#000" fill="#FFF" text-align="center" text-anchor="middle">MIND</tspan></text>
+    <text transform="matrix(.99876 .061075 -.049741 .9982 0 0)" x="131.16411" y="50.495529" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="131.16411" y="50.495529" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">SYSTEM SHOCK</tspan></text>
+    <text transform="matrix(.99876 .061075 -.049741 .9982 0 0)" x="131.95425" y="66.36097" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="131.95425" y="66.36097" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">SYSTEM SHOCK</tspan></text>
+    <text transform="matrix(.99876 .061075 -.049741 .9982 0 0)" x="132.75706" y="82.480568" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="132.75706" y="82.480568" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">SYSTEM SHOCK</tspan></text>
+    <text x="107.09576" y="72.178329" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="107.09576" y="72.178329" font-family="'Exo 2', sans-serif" stroke-width=".2" stroke="#000" fill="#FFF" text-align="center" text-anchor="middle">SOUL</tspan></text>
+    <text x="82.188042" y="57.361664" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="82.188042" y="57.361664" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">MAX CYPHERS</tspan></text>
+    <text x="82.188042" y="73.243721" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="82.188042" y="73.243721" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">MAX BIOGRAFTS</tspan></text>
+    <text x="82.188042" y="89.408195" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="82.188042" y="89.408195" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">MAX EQUP WT</tspan></text>
+    <text x="107.03346" y="25.001625" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="107.03346" y="25.001625" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">SPENT</tspan></text>
+    <text x="134.82533" y="25.001625" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="134.82533" y="25.001625" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">WOUND</tspan></text>
+   </g>
+   <text x="106.67613" y="33.333725" font-size="4px" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="106.67613" y="33.333725" font-family="'Exo 2', sans-serif" stroke-width=".2" stroke="#000" fill="#FFF" text-align="center" text-anchor="middle">KNACK</tspan></text>
+   <text x="134.41835" y="33.333725" font-size="4px" text-align="end" style="line-height:0.76" xml:space="preserve"><tspan x="134.41835" y="33.333725" font-family="'Exo 2', sans-serif" stroke-width=".2" stroke="#000" fill="#FFF" text-align="center" text-anchor="middle">TOUGH</tspan></text>
+  </g>
+  <g transform="matrix(.26458 0 0 .26458 -59.847 .021575)" fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="round" stroke-width="2">
+   <path d="m552.2 106.13c4.0298 2.5329 7.6418 5.6695 10.709 9.283l-12.603 10.176c4.6096 5.2905 7.4012 12.206 7.4012 19.774" marker-end="url(#Dot-7-2)" style="paint-order:fill markers stroke"/>
+   <path d="m497.53 121.25c7.0627-8.7912 17.903-14.418 30.057-14.418 21.282 0 38.535 17.253 38.535 38.535s-17.253 38.535-38.535 38.535c-21.282 0-38.535-17.253-38.535-38.535 0-6.0767 1.4066-11.825 3.9119-16.937l-6.7738-3.8369c3.576-7.1122 8.931-13.176 15.481-17.607" marker-end="url(#Dot-7-2)" marker-start="url(#Dot-7-2)" style="paint-order:fill markers stroke"/>
+  </g>
+  <g fill="none" stroke-linecap="square">
+   <g stroke="#000" stroke-linejoin="round" stroke-width=".52917">
+    <rect x="71.179" y="8.9974" width="16.43" height="13.782" style="paint-order:fill markers stroke"/>
+    <rect x="98.888" y="8.9974" width="16.43" height="13.782" style="paint-order:fill markers stroke"/>
+    <rect x="126.6" y="8.9974" width="16.43" height="13.782" style="paint-order:fill markers stroke"/>
+   </g>
+   <g stroke-width=".39688">
+    <path d="m136.91 59.357v4.2089m-7.3721-4.5092v4.8096m-7.3721-5.2755v5.7414m-6.786-6.2404 0.0917 6.7423 28.559-1.3611v-3.6534z" stroke="url(#linearGradient5)" style="paint-order:fill markers stroke"/>
+    <path d="m136.91 75.397v4.2089m-7.3721-4.5092v4.8096m-7.3721-5.2755v5.7414m-6.786-6.2404 0.0917 6.7423 28.559-1.3611v-3.6534z" stroke="url(#linearGradient6)" style="paint-order:fill markers stroke"/>
+    <path d="m136.91 91.437v4.2089m-7.3721-4.5092v4.8096m-7.3721-5.2755v5.7414m-6.786-6.2404 0.0917 6.7423 28.559-1.3611v-3.6534z" stroke="url(#linearGradient7)" style="paint-order:fill markers stroke"/>
+   </g>
+  </g>
+  <g transform="translate(0 -.10789)" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".52917">
+   <path d="m87.016 61.966h12.465" marker-end="url(#marker2)" style="paint-order:fill markers stroke"/>
+   <rect x="77.971" y="58.23" width="8.6346" height="6.6784" style="paint-order:fill markers stroke"/>
+  </g>
+  <g transform="translate(-2.2352e-7 15.932)" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".52917">
+   <path d="m87.016 61.966h12.465" marker-end="url(#marker2-2)" style="paint-order:fill markers stroke"/>
+   <rect x="77.971" y="58.23" width="8.6346" height="6.6784" style="paint-order:fill markers stroke"/>
+  </g>
+  <g transform="translate(-2.2352e-7 31.972)" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".52917">
+   <path d="m87.016 61.966h12.465" marker-end="url(#marker2-8)" style="paint-order:fill markers stroke"/>
+   <rect x="77.971" y="58.23" width="8.6346" height="6.6784" style="paint-order:fill markers stroke"/>
+  </g>
+  <text x="107.06587" y="88.317909" font-family="'Exo 2', sans-serif" font-size="2.1107px" stroke-width=".2" stroke="#000" fill="#FFF" text-align="end" text-anchor="end" style="line-height:0.76" xml:space="preserve"><tspan x="107.06587" y="88.317909" font-family="'Exo 2', sans-serif" stroke-width=".26458" text-align="center" text-anchor="middle">BODY</tspan></text>
+ </g>
+</svg>

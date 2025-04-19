@@ -1,0 +1,1 @@
+This is a fan port of neon skies for Roll20 use. If you are William Buchanan or an associate of William Buchanan and do not wish for any of the material here to be used, please contact me. I have tried to restrict hosted items to fair use items rather than simply dumping your wonderful sourcebook to the internet. 

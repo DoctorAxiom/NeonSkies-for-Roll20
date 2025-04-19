@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="20" height="20" version="1.1" viewBox="0 0 5.2917 5.2917" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(.0085482 -.067247)">
+  <g fill="none" stroke="#000" stroke-width=".33073">
+   <ellipse transform="rotate(-49.984)" cx="-.40839" cy="3.7329" rx=".98183" ry="2.1388"/>
+   <ellipse cx="2.5963" cy="2.7131" rx=".98183" ry="2.1388"/>
+   <ellipse transform="rotate(54.021)" cx="3.7208" cy="-.50712" rx=".98183" ry="2.1388"/>
+  </g>
+  <circle cx="4.2778" cy="1.4574" r=".55195"/>
+ </g>
+</svg>

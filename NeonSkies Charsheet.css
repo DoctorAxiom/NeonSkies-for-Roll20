@@ -1,0 +1,434 @@
+@import "compass/css3";
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+
+$bgcolor: #fdfdfd;
+$tabs-base-bg: #ededed;
+
+* {
+    font-family: "Exo 2", Tahoma, sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    background: #fff;
+}
+
+.sheet-NeonSkiesSheet {
+    font-family: "Exo 2", Tahoma, sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+
+    h2 {
+        z-index: 4;
+        display: block;
+        width: min-content;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 16px;
+
+        position: relative;
+        top: -2px;
+
+        
+        height: 18px;
+        padding-top: 4px;
+        padding-bottom: 16px;
+        padding-left: 6px;
+        padding-right: 8px;
+        color: #EFEFEF;
+        background:
+            linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+        background-color: #131313;
+        background-size: 20px 20px;
+        border-top-style: ridge;
+        border-top-color: #b2b2b2;
+        border-top-right-radius: 20px;
+        border-left-style: ridge;
+        border-left-color: #b2b2b2;
+        border-right-style: ridge;
+        border-right-color: #b2b2b2;
+    }
+
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    table {
+        border: 0;
+        width: 100%;
+        table-layout: fixed;
+        overflow-wrap: break-word;
+
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    table input,
+    table select,
+    table span {
+        width: 100%;
+    }
+
+    table textarea {
+        width: 100%;
+        height: min-content;
+        resize: vertical;
+    }
+
+    .sheet-nsstatsection {
+        z-index: 1;
+        display: block;
+
+        font-size: 17px;
+        line-height: 25px;
+        padding: 2px 20px 8px 20px;
+
+        position: relative;
+        top: 0px;
+
+        border-style: ridge;
+        border-color: #b2b2b2;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: #efefef;
+    }
+
+    h2 + .sheet-nsstatsection {
+        top: -4px;
+    }
+
+    .repeating_cyphers + .repcontainer {
+        .repitem {
+            display: inline-block;
+            width: 33%;
+
+            input, select{
+                width:100%;
+            }
+        }
+
+    } 
+
+    .repeating_weapons + .repcontainer {
+        .repitem .repeatingitemheaderskip {
+            display: none;
+        }
+        .repitem ~ .repitem .repeatingitemheaderskip {
+            display: block;
+        }
+    }
+
+    .repeating_inventoryitems + .repcontainer{
+        .repitem { 
+            display: inline-block;
+            width: 49%;
+        }
+    }
+
+    .repeating_storageitems + .repcontainer{
+        .repitem { 
+            display: inline-block;
+            width: 49%;
+        }
+    }
+
+    select.dmgtype {
+        color: #0000;
+        background-repeat: no-repeat;
+        background-size: 32px;
+        background-position: center;
+    }
+
+    select.dmgtype option{
+        color: #000F;
+    }
+
+    select.dmgtype:has(> option[value="ballistic"]:checked) {
+        background-image: url("https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Ballistic%20Icon.svg");
+    }
+
+    select.dmgtype:has(> option[value="energy"]:checked) {
+        background-image: url("https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Energy%20Icon.svg");
+    }
+
+    select.dmgtype:has(> option[value="immolative"]:checked) {
+        background-image: url("https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Immolative%20Icon.svg");
+    }
+
+    select.modtype {
+        color: #0000;
+        background-repeat: no-repeat;
+        background-size: 32px;
+        background-position: center;
+    }
+
+    select.modtype option{
+        color: #000F;
+    }
+
+    select.modtype:has(> option[value="accelerator"]:checked) {
+        background-image: url("https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Accelerator%20Icon.svg");
+    }
+
+    select.modtype:has(> option[value="stabilizer"]:checked) {
+        background-image: url("https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Stabilizer%20Icon.svg");
+    }
+
+    select.modtype:has(> option[value="hardened"]:checked) {
+        background-image: url("https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Hardened%20Icon.svg");
+    }
+}
+
+
+hr {
+    border-width: 2px;
+    border-style: ridge;
+    border-color: #b2b2b2;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.sheet-nsFlow {
+    display: block;
+    text-align: center;
+}
+
+.sheet-nsStatic {
+    margin: 10px;
+    padding: 0;
+    width: 400px;
+/*    height: min-content;*/
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.sheet-enc {
+    display: block;
+    position: relative;
+    
+    input[type="number"] {
+        background: none;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #0002;
+        border-radius: 8px;
+    }
+
+    input[type="range"].sheet-nsshockslider   {
+      -webkit-appearance: none;  /* Override default CSS styles */
+      appearance: none;
+      height: 20px; /* Specified height */
+      background: #0000; /* Grey background */
+      outline: none; /* Remove outline */
+      border: none;
+      opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+      -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+      transition: opacity .2s;
+    }
+
+
+    /* The slider properties for chrome based stuff */
+    input[type="range"].sheet-nsshockslider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 24px;
+      position: relative;
+      top: 4px;
+      background: #000;
+      border-color: #000d;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none;
+      opacity: 0;
+    }
+
+    input[type="range"].sheet-nsshockslider::-webkit-slider-runnable-track {
+      z-index: 0;
+      background: linear-gradient(90deg,rgba(237, 60, 30, 0.5) 0%, rgba(220, 110, 20, 0.5) 50%, rgba(255, 232, 20, 0.5) 160px);
+      height: 32px;
+      clip-path: polygon(2px 0px, 158px 9px, 158px 23px, 2px 32px);
+    }
+
+    /* Slider properties for mozilla firefox */
+    input[type="range"].sheet-nsshockslider::-moz-range-thumb {
+/*    z-index: 2;
+      width: 6px;
+      height: 24px;
+      background: #F3A12a;
+      border-color: #0000;
+      border-radius: 4px;
+      cursor: pointer;*/
+      display: hidden;
+      opacity: 0;
+    }
+
+    input[type="range"].sheet-nsshockslider::-moz-range-progress {
+      z-index: 0;
+      background: linear-gradient(90deg,rgba(237, 60, 30, 1) 0%, rgba(220, 110, 20, 1) 50%, rgba(255, 232, 20, 1) 160px);
+      height:32px;
+      clip-path: polygon(2px 0px, 158px 9px, 158px 23px, 2px 32px);
+    }
+
+}
+
+table input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+table input[type="range"]::-moz-range-thumb {
+  opacity: 0;
+}
+
+table input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, rgba(0,192,12,1) 0%, rgba(192,180,0,1) 100%);
+}
+
+table input[type="range"]::-moz-range-progress {
+    background: linear-gradient(90deg, rgba(0,192,12,1) 0%, rgba(220,200,0,1) 100%);
+    height: 100%;
+}
+
+.sheet-nsstatsection {
+    padding: 2px 10px 8px 10px;
+    border-style: ridge;
+    border-color: #b2b2b2;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #efefef;
+}
+
+.tabs {
+  width: 90%;  
+  margin: 0 1% 0 2%;
+  padding: 0;
+  float: none;
+  list-style: none;
+  position: relative;
+  text-align: left;
+
+  li {
+    float: left;
+    display: block;
+  }
+
+  input[type="radio"].sheet-nstab {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+
+  label {
+    display: block;
+    height: 18px;
+    padding-top: 8px;
+    padding-bottom: 22px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 0px 20px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #C5C5C5;
+    background:
+        linear-gradient(27deg, #353535 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #353535 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #555 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #555 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #3b3b3b 10px, transparent 10px),
+        linear-gradient(#3d3d3d 25%, #3a3a3a 25%, #3a3a3a 50%, transparent 50%, transparent 75%, #545454 75%, #545454);
+    background-color: #131313;
+    background-size: 20px 20px;
+    cursor: pointer;
+    position: relative;
+    top: 10px; 
+    @include transition(all 0.2s ease-in-out);
+    &:hover {
+        background:
+        linear-gradient(27deg, #252525 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #252525 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #444 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #444 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #2b2b2b 10px, transparent 10px),
+        linear-gradient(#2d2d2d 25%, #2a2a2a 25%, #2a2a2a 50%, transparent 50%, transparent 75%, #444444 75%, #444444);
+        background-color: #101010;
+        background-size: 20px 20px;
+    }
+  }
+
+  .tab-content{
+    z-index: 0;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 20px;  
+    position: absolute;
+    top: 53px;
+    left: 0; 
+    background: darken($tabs-base-bg, 15);
+  }
+
+  [id^="tab"]:checked + label { 
+    z-index: 2;
+    top: 0;
+    height: 18px;
+    padding-top: 8px;
+    padding-bottom: 27px;
+    padding-right: 8px;
+    color: #EFEFEF;
+    font-weight: 800;
+    background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    border-top-style: ridge;
+    border-top-color: #b2b2b2;
+    border-top-right-radius: 20px;
+    border-left-style: ridge;
+    border-left-color: #b2b2b2;
+    border-right-style: ridge;
+    border-right-color: #b2b2b2;
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;
+    display: block;
+    border-style: ridge;
+    border-color: #b2b2b2;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #efefef;
+
+    table input,
+    table select,
+    table span {
+        width: 100%;
+    }
+
+    table textarea {
+        width: 100%;
+        height: min-content;
+        resize: vertical;
+    }
+  }
+}

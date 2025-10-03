@@ -6,639 +6,913 @@
 <body>
 
 <div class="sheet-NeonSkiesSheet">
-	<h2>Neuralnet</h2>
-	<div class="sheet-nsstatsection">
-      <table>
-      	<tr>
-      		<td style="text-align: right;"><b>Engram: &nbsp;</b></td>
-      		<td colspan="5" style="text-align: left; padding-left: 10px"><span name="attr_character_name"></span></td>
-      	</tr>
-      	<tr>
-      		<td style="text-align: right;"><b>Strain: &nbsp;</b></td>
-      		<td colspan="3">
-      			<select name="attr_infusion_strain" style="font-size: 14px;">
-      				<option value="alpha">Alpha (EquipWt +1, DevPts +3)</option>
-      				<option value="delta">Delta (EquipWt +1, Cyber +1)</option>
-      				<option value="delta-k">Delta-K (EquipWt +1, Knack +1)</option>
-      				<option value="eurasia">Eurasia (EquipWt +1, Tough +1)</option>
-      				<option value="deepblue">DeepBlue (DevPts +3, Cyber +1)</option>
-      				<option value="gen-31">Gen-31 (DevPts +3, Knack +1)</option>
-      				<option value="grumman">Grumman (DevPts +3, Tough +1)</option>
-      			</select>
-      		</td>
-      		<td style="text-align: right;"><b>DevPts: &nbsp;</b></td>
-      		<td><input type="number" name="attr_devpoints" /></td>
-      	</tr>
-      </table>
+	Sheet Type:
+	<select name="attr_nssheet_type" class="ns-sheettype">
+		<option value="sheet-pc">Player Character</option>
+		<option value="sheet-vehicle">Vehicle</option>
+		<option value="sheet-bot">Bot</option>
+	</select>
 
-      <table border="2px">
-      	<tr>
-      		<td>
-      			<h3>Deus Ex</h3>
-      			<input type="number" name="attr_deus_ex" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
-      		</td>
-      		<td>
-      			<h3>Booster Sat</h3>
-      			<input type="number" name="attr_saturation" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
-      		</td>
-      		<td>
-      			<h3>Cybernecrosis</h3>
-      			<input type="checkbox" name="attr_cybernecrosis" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
-      		</td>
-      		<td>
-      			<h3>Awakened</h3>
-      			<input type="checkbox" name="attr_awakened" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
-      		</td>
-      	</tr>
-      </table>
-	</div>
+	<div id="sheet-pc" class="ns-sheettype">
 
-	<div class="sheet-nsFlow">
-		<div class="sheet-nsStatic">
-			<div class="sheet-enc">
-				<input name="attr_cyber" type="number" min="0" style="text-align: center; position:absolute; top:180px; left: 20px; width: 72px; font-size: 36px"/>
-				<input name="attr_knack" type="number" min="0" style="text-align: center; position:absolute; top:180px; left: 164px; width: 72px; font-size: 36px"/>
-				<input name="attr_tough" type="number" min="0" style="text-align: center; position:absolute; top:180px; left: 307px; width: 72px; font-size: 36px"/>
+		<h2>Neuralnet</h2>
+		<div class="sheet-nsstatsection">
+	      <table>
+	      	<tr>
+	      		<td style="text-align: right;"><b>Engram: &nbsp;</b></td>
+	      		<td colspan="5" style="text-align: left; padding-left: 10px"><span name="attr_character_name"></span></td>
+	      	</tr>
+	      	<tr>
+	      		<td style="text-align: right;"><b>Strain: &nbsp;</b></td>
+	      		<td colspan="3">
+	      			<select name="attr_infusion_strain" style="font-size: 14px;">
+	      				<option value="alpha">Alpha (EquipWt +1, DevPts +3)</option>
+	      				<option value="delta">Delta (EquipWt +1, Cyber +1)</option>
+	      				<option value="delta-k">Delta-K (EquipWt +1, Knack +1)</option>
+	      				<option value="eurasia">Eurasia (EquipWt +1, Tough +1)</option>
+	      				<option value="deepblue">DeepBlue (DevPts +3, Cyber +1)</option>
+	      				<option value="gen-31">Gen-31 (DevPts +3, Knack +1)</option>
+	      				<option value="grumman">Grumman (DevPts +3, Tough +1)</option>
+	      			</select>
+	      		</td>
+	      		<td style="text-align: right;"><b>DevPts: &nbsp;</b></td>
+	      		<td><input type="number" name="attr_devpoints" /></td>
+	      	</tr>
+	      </table>
 
-				<input name="attr_burn" type="number" min="0" style="text-align: center; position:absolute; top:58px; left: 20px; width: 72px; font-size: 28px"/>
-				<input name="attr_spent" type="number" min="0" style="text-align: center; position:absolute; top:58px; left: 164px; width: 72px; font-size: 28px"/>
-				<input name="attr_wound" type="number" min="0" style="text-align: center; position:absolute; top:58px; left: 309px; width: 72px; font-size: 28px"/>
+	      <table border="2px">
+	      	<tr>
+	      		<td>
+	      			<h3>Deus Ex</h3>
+	      			<input type="number" name="attr_deus_ex" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
+	      		</td>
+	      		<td>
+	      			<h3>Booster Sat</h3>
+	      			<input type="number" name="attr_saturation" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
+	      		</td>
+	      		<td>
+	      			<h3>Cybernecrosis</h3>
+	      			<input type="checkbox" name="attr_cybernecrosis" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
+	      		</td>
+	      		<td>
+	      			<h3>Awakened</h3>
+	      			<input type="checkbox" name="attr_awakened" style="height: 40px; width:60px; font-size: 24px; text-align: center" />
+	      		</td>
+	      	</tr>
+	      </table>
+		</div>
 
-				<input name="attr_mind" type="number" min="0" style="text-align: center; position:absolute; top:304px; left:181px; width: 42px; font-size: 20px"/>
-				<input name="attr_soul" type="number" min="0" style="text-align: center; position:absolute; top:388px; left:181px; width: 42px; font-size: 20px"/>
-				<input name="attr_body" type="number" min="0" style="text-align: center; position:absolute; top:472px; left:181px; width: 42px; font-size: 20px"/>
+		<div class="sheet-nsFlow">
+			<div class="sheet-nsStatic">
+				<div class="sheet-enc">
+					<input name="attr_cyber" type="number" min="0" style="text-align: center; position:absolute; top:180px; left: 20px; width: 72px; font-size: 36px"/>
+					<input name="attr_knack" type="number" min="0" style="text-align: center; position:absolute; top:180px; left: 164px; width: 72px; font-size: 36px"/>
+					<input name="attr_tough" type="number" min="0" style="text-align: center; position:absolute; top:180px; left: 307px; width: 72px; font-size: 36px"/>
 
-				<input name="attr_shock_mind" class="sheet-nsshockslider" type="range" min="0" max="4" style="text-align: center; position:absolute; top:306px; left:238px; width: 160px; font-size: 20px"/>
-				<input name="attr_shock_mind" type="number" min="0" max="4" style="text-align: center; position:absolute; top:326px; left:348px; width: 48px; font-size: 18px"/>
-				<input name="attr_shock_soul" class="sheet-nsshockslider" type="range" min="0" max="4" style="text-align: center; position:absolute; top:390px; left:238px; width: 160px; font-size: 20px"/>
-				<input name="attr_shock_soul" type="number" min="0" max="4" style="text-align: center; position:absolute; top:410px; left:348px; width: 48px; font-size: 18px"/>
-				<input name="attr_shock_body" class="sheet-nsshockslider" type="range" min="0" max="4" style="text-align: center; position:absolute; top:474px; left:238px; width: 160px; font-size: 20px"/>
-				<input name="attr_shock_body" type="number" min="0" max="4" style="text-align: center; position:absolute; top:494px; left:348px; width: 48px; font-size: 18px"/>
+					<input name="attr_burn" type="number" min="0" style="text-align: center; position:absolute; top:58px; left: 20px; width: 72px; font-size: 28px"/>
+					<input name="attr_spent" type="number" min="0" style="text-align: center; position:absolute; top:58px; left: 164px; width: 72px; font-size: 28px"/>
+					<input name="attr_wound" type="number" min="0" style="text-align: center; position:absolute; top:58px; left: 309px; width: 72px; font-size: 28px"/>
 
-				<input name="attr_max_cyphers" type="number" min="0" style="text-align: center; position:absolute; top:304px; left:51px; width: 42px; font-size: 18px"/>
-				<input name="attr_max_grafts" type="number" min="0" style="text-align: center; position:absolute; top:388px; left:51px; width: 42px; font-size: 18px"/>
-				<input name="attr_max_equp_wt" type="number" min="0" style="text-align: center; position:absolute; top:472px; left:51px; width: 42px; font-size: 18px"/>
+					<input name="attr_mind" type="number" min="0" style="text-align: center; position:absolute; top:304px; left:181px; width: 42px; font-size: 20px"/>
+					<input name="attr_soul" type="number" min="0" style="text-align: center; position:absolute; top:388px; left:181px; width: 42px; font-size: 20px"/>
+					<input name="attr_body" type="number" min="0" style="text-align: center; position:absolute; top:472px; left:181px; width: 42px; font-size: 20px"/>
 
-				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/825cb7861ec5fe57c23ac065bea456fdb86ba4b1/charsheet%20simpl.svg" />
+					<input name="attr_shock_mind" class="sheet-nsshockslider" type="range" min="0" max="4" style="text-align: center; position:absolute; top:306px; left:238px; width: 160px; font-size: 20px"/>
+					<input name="attr_shock_mind" type="number" min="0" max="4" style="text-align: center; position:absolute; top:326px; left:348px; width: 48px; font-size: 18px"/>
+					<input name="attr_shock_soul" class="sheet-nsshockslider" type="range" min="0" max="4" style="text-align: center; position:absolute; top:390px; left:238px; width: 160px; font-size: 20px"/>
+					<input name="attr_shock_soul" type="number" min="0" max="4" style="text-align: center; position:absolute; top:410px; left:348px; width: 48px; font-size: 18px"/>
+					<input name="attr_shock_body" class="sheet-nsshockslider" type="range" min="0" max="4" style="text-align: center; position:absolute; top:474px; left:238px; width: 160px; font-size: 20px"/>
+					<input name="attr_shock_body" type="number" min="0" max="4" style="text-align: center; position:absolute; top:494px; left:348px; width: 48px; font-size: 18px"/>
+
+					<input name="attr_max_cyphers" type="number" min="0" style="text-align: center; position:absolute; top:304px; left:51px; width: 42px; font-size: 18px"/>
+					<input name="attr_max_grafts" type="number" min="0" style="text-align: center; position:absolute; top:388px; left:51px; width: 42px; font-size: 18px"/>
+					<input name="attr_max_equp_wt" type="number" min="0" style="text-align: center; position:absolute; top:472px; left:51px; width: 42px; font-size: 18px"/>
+
+					<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/825cb7861ec5fe57c23ac065bea456fdb86ba4b1/charsheet%20simpl.svg" />
+				</div>
+			</div>
+			<div class="sheet-nsStatic" style="width: 500px;">
+				<div class="sheet-nsstatsection">
+					<h3>Base Hack Dice</h3>
+					<table border="2px">
+						<tr>
+							<td>
+								<h3>Spike</h3>
+								<input type="number" min="0" name="attr_spike" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
+							</td>
+							<td>
+								<h3>Reboot</h3>
+								<input type="number" min="0" name="attr_reboot" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
+							</td>
+							<td>
+								<h3>Interface</h3>
+								<input type="number" min="0" name="attr_interface" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
+							</td>
+							<td>
+								<h3>Defense</h3>
+								<input type="number" min="0" name="attr_defense" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
+							</td>
+							<td>
+								<h3>Anchor</h3>
+								<input type="number" min="0" name="attr_anchor" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
+							</td>
+							<td>
+								<h3>Duel</h3>
+								<input type="number" min="0" name="attr_duel" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3"><h3>Syncs</h3></td>
+							<td colspan="3"><h3>Dives</h3></td>
+						</tr>
+					</table>
+
+					<hr />
+
+					<h3>Installed Cyphers</h3>
+					<span style="text-align: left">
+						<fieldset class="repeating_cyphers">
+							<input type="text" name="attr_cyphername"/>
+						</fieldset>
+					</span>
+
+					<hr />
+
+					<h3>Installed Biografts</h3>
+						<fieldset class="repeating_biografts">
+							<table>
+								<tr>
+									<td>
+										<input type="text" name="attr_biograftname" style="text-align: left; text-transform: uppercase; font-size: 14px;"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<textarea name="attr_biograftdesc"></textarea>
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+				</div>
 			</div>
 		</div>
-		<div class="sheet-nsStatic" style="width: 500px;">
-			<div class="sheet-nsstatsection">
-				<h3>Base Hack Dice</h3>
-				<table border="2px">
-					<tr>
-						<td>
-							<h3>Spike</h3>
-							<input type="number" min="0" name="attr_spike" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
-						</td>
-						<td>
-							<h3>Reboot</h3>
-							<input type="number" min="0" name="attr_reboot" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
-						</td>
-						<td>
-							<h3>Interface</h3>
-							<input type="number" min="0" name="attr_interface" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
-						</td>
-						<td>
-							<h3>Defense</h3>
-							<input type="number" min="0" name="attr_defense" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
-						</td>
-						<td>
-							<h3>Anchor</h3>
-							<input type="number" min="0" name="attr_anchor" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
-						</td>
-						<td>
-							<h3>Duel</h3>
-							<input type="number" min="0" name="attr_duel" style="height: 30px; width:50px; font-size: 16px; text-align: center" />
-						</td>
-					</tr>
-					<tr>
-						<td colspan="3"><h3>Syncs</h3></td>
-						<td colspan="3"><h3>Dives</h3></td>
-					</tr>
-				</table>
 
-				<hr />
+		<div class="sheet-nsTabBox">
+			<ul class="tabs" role="tablist">
 
-				<h3>Installed Cyphers</h3>
-				<span style="text-align: left">
-					<fieldset class="repeating_cyphers">
-						<input type="text" name="attr_cyphername"/>
-					</fieldset>
-				</span>
-
-				<hr />
-
-				<h3>Installed Biografts</h3>
-					<fieldset class="repeating_biografts">
-						<table>
-							<tr>
-								<td>
-									<input type="text" name="attr_biograftname" style="text-align: left; text-transform: uppercase; font-size: 14px;"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<textarea name="attr_biograftdesc"></textarea>
-								</td>
-							</tr>
-						</table>
-					</fieldset>
-			</div>
-		</div>
-	</div>
-
-	<div class="sheet-nsTabBox">
-		<ul class="tabs" role="tablist">
-
-		    <li>
-		        <input type="radio" name="tabs" class="sheet-nstab" id="tab1" checked/>
-		        <label for="tab1" 
-		               role="tab" 
-		               aria-selected="true" 
-		               aria-controls="panel1" 
-		               tabindex="0">Equipped</label>
-		        <div id="tab-content1" 
-		             class="tab-content" 
-		             role="tabpanel" 
-		             aria-labelledby="description" 
-		             aria-hidden="false">
-		        	<table>
-		        		<tr>
-		        			<td colspan="7">
-		        				<h3 style="text-align: left;">Armor</h3>
-		        			</td>
-		        			<td colspan="2">
-		        				<h3>WT</h3>
-		        			</td>
-		        			<td colspan="3">
-		        				<h3 style="text-align: center;">Type</h3>
-		        			</td>
-		        		</tr>
-		        		<tr>
-		        			<td colspan="7">
-		        				<input type="text" name="attr_armorname" />
-		        			</td>
-		        			<td colspan="2" style="background-image: url('https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Shield%20Icon.svg'); background-size: 64px; background-repeat: no-repeat; background-position: center;">
-		        				<input type="number" min="0" name="attr_armorwt" style="font-size: 16px; text-align: center; width: 50px; height: 32px; background: none"/>
-		        			</td>
-		        			<td style="text-align: center;">
-		        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Ballistic%20Icon.svg" width="32px" height="32px" alt="Ballistic"/>
-		        				<input type="radio" name="attr_armortype" id="armor_ballistic" value="ballistic" />
-		        			</td>
-		        			<td>
-		        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Energy%20Icon.svg" width="32px" height="32px" alt="Energy"/>
-		        				<input type="radio" name="attr_armortype" id="armor_energy" value="energy" />
-		        			</td>
-		        			<td>
-		        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Immolative%20Icon.svg" width="32px" height="32px" alt="Immolative"/>
-		        				<input type="radio" name="attr_armortype" id="armor_immolative" value="immolative" />
-		        			</td>
-		        		</tr>
-		        		<tr>
-		        			<td colspan="12">
-		        				<textarea name="attr_armordesc"></textarea>
-		        			</td>
-		        		</tr>
-		        	</table>
-		       		<hr />
-		        	<table>
-		        		<tr>
-		        			<td colspan="7">
-		        				<h3 style="text-align: left;">Weapon</h3>
-		        			</td>
-		        			<td colspan="5">
-		        				<h3 style="text-align: center;">Type</h3>
-		        			</td>
-		        		</tr>
-		        	</table>
-
-		        	<fieldset class="repeating_weapons" style="border: none; padding: 0; margin: 0">
-		        		<div class="repeatingitemheaderskip">
-				        	<hr />
-				        	<table>
-				        		<tr>
-				        			<td colspan="7">
-				        				<h3 style="text-align: left;">Weapon</h3>
-				        			</td>
-				        			<td colspan="5">
-				        				<h3 style="text-align: center;">Type</h3>
-				        			</td>
-				        		</tr>
-			        		</table>
-			        	</div>
-
+			    <li>
+			        <input type="radio" name="tabs" class="sheet-nstab" id="tab1" checked/>
+			        <label for="tab1" 
+			               role="tab" 
+			               aria-selected="true" 
+			               aria-controls="panel1" 
+			               tabindex="0">Equipped</label>
+			        <div id="tab-content1" 
+			             class="tab-content" 
+			             role="tabpanel" 
+			             aria-labelledby="description" 
+			             aria-hidden="false">
 			        	<table>
 			        		<tr>
 			        			<td colspan="7">
-			        				<input type="text" name="attr_weaponname" />
+			        				<h3 style="text-align: left;">Armor</h3>
+			        			</td>
+			        			<td colspan="2">
+			        				<h3>WT</h3>
+			        			</td>
+			        			<td colspan="3">
+			        				<h3 style="text-align: center;">Type</h3>
+			        			</td>
+			        		</tr>
+			        		<tr>
+			        			<td colspan="7">
+			        				<input type="text" name="attr_armorname" />
+			        			</td>
+			        			<td colspan="2" style="background-image: url('https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Shield%20Icon.svg'); background-size: 64px; background-repeat: no-repeat; background-position: center;">
+			        				<input type="number" min="0" name="attr_armorwt" style="font-size: 16px; text-align: center; width: 50px; height: 32px; background: none"/>
 			        			</td>
 			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Melee%20Icon.svg" width="32px" height="32px" alt="Melee" />
-			        				<input type="radio" name="attr_weapontype" id="weapon_melee" value="melee" />
+			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Ballistic%20Icon.svg" width="32px" height="32px" alt="Ballistic"/>
+			        				<input type="radio" name="attr_armortype" id="armor_ballistic" value="ballistic" />
 			        			</td>
-			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Unarmed%20Icon.svg" width="32px" height="32px" alt="Unarmed" />
-			        				<input type="radio" name="attr_weapontype" id="weapon_unarmed" value="unarmed" alt="Unarmed"/>
+			        			<td>
+			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Energy%20Icon.svg" width="32px" height="32px" alt="Energy"/>
+			        				<input type="radio" name="attr_armortype" id="armor_energy" value="energy" />
 			        			</td>
-			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Ballistic%20Icon.svg" width="32px" height="32px" alt="Ballistic" />
-			        				<input type="radio" name="attr_weapontype" id="weapon_ballistic" value="ballistic" />
-			        			</td>
-			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Energy%20Icon.svg" width="32px" height="32px" alt="Energy" />
-			        				<input type="radio" name="attr_weapontype" id="weapon_energy" value="energy" />
-			        			</td>
-			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Immolative%20Icon.svg" width="32px" height="32px" alt="Immolative" />
-			        				<input type="radio" name="attr_weapontype" id="weapon_immolative" value="immolative" />
+			        			<td>
+			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Immolative%20Icon.svg" width="32px" height="32px" alt="Immolative"/>
+			        				<input type="radio" name="attr_armortype" id="armor_immolative" value="immolative" />
 			        			</td>
 			        		</tr>
 			        		<tr>
 			        			<td colspan="12">
-			        				<table border="2px">
-			        					<tr>
-			        						<td>
-			        							<h3>Base Dice</h3>
-			        							<input type="number" min="0" name="attr_weaponbasedice" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
-			        						</td>
-			        						<td>
-			        							<h3>Damage</h3>
-			        							<input type="text" name="attr_weapondamage" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
-			        						</td>
-			        						<td>
-			        							<h3>AP Dice</h3>
-			        							<input type="number" min="0" name="attr_weaponap" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
-			        						</td>
-			        						<td>
-			        						<h3>WT</h3>
-			        							<input type="number" min="0" name="attr_weaponweight" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
-			        						</td>
-			        						<td>
-			        							<h3>Upkeep</h3>
-			        							<input type="number" min="0" step="10" name="attr_weaponupkeep" style="font-size: 16px; text-align: center; width: 100%; height: 32px;"> <br/>
-			        							<table><tr><td colspan="4"><h3>Depleted</h3></td><td><input type="checkbox" name="attr_weapondepleted"></td></tr></table>
-			        						</td>
-			        					</tr>
-			        				</table>
-			        			</td>
-			        		</tr>
-			        		<tr>
-			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Accelerator%20Icon.svg" width="32px" height="32px" alt="Accelerator" />
-			        				<input type="checkbox" name="attr_weapon_accelerator" />
-			        			</td>
-			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Stabilizer%20Icon.svg" width="32px" height="32px" alt="Stabilizer" />
-			        				<input type="checkbox" name="attr_weapon_stabilizer" />
-			        			</td>
-			        			<td style="text-align: center;">
-			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Hardened%20Icon.svg" width="32px" height="32px" alt="Hardened" />
-			        				<input type="checkbox" name="attr_weapon_hardened" />
-			        			</td>
-			        			<td colspan="9">
-			        				<textarea name="attr_weapondesc"></textarea>
+			        				<textarea name="attr_armordesc"></textarea>
 			        			</td>
 			        		</tr>
 			        	</table>
-		        	</fieldset>
-		        </div>
-		    </li>
-		  
-		    <li>
-		        <input type="radio" name="tabs" class="sheet-nstab" id="tab2" />
-		        <label for="tab2"
-		               role="tab" 
-		               aria-selected="false" 
-		               aria-controls="panel2" 
-		               tabindex="1">Inventory</label>
-		        <div id="tab-content2" 
-		             class="tab-content"
-		             role="tabpanel" 
-		             aria-labelledby="specification" 
-		             aria-hidden="true">
-		          <table>
-		          	<tr>
-		          		<td colspan="3">
-		          			<h3 style="text-align: left">Unicreds</h3>
-		          			<input type="number" name="attr_unicreds" style="font-size: 32px; text-align: center;" step="10"/>
-		          		</td>
-		          		<td colspan="2" style="text-align: center">
-
-		          			<table>
-		          				<tr>
-		          					<td colspan=5><img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/MSM%20Icon.svg" width="32px" height="32px" alt="MSM"/></td>
-		          				</tr>
-		          				<tr>
-		          					<td colspan=4>
-		          						<input type="range" name="attr_inventory_msm" min="0" max="5" style="width: 90%; display: block; margin-left: 5%;"/>
-		          						<table style="font-size:10px; position: relative; top: -4px;"><tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr></table>
-		          					</td>
-		          					<td colspan=2>
-		          						<input type="number" name="attr_inventory_msm" min="0" max="5" style="font-size: 24px; text-align: center;"/>
-		          					</td>
-		          				</tr>
-		          			</table>
-
-		          		</td>
-		          	</tr>
-		          </table>
-		          <hr />
-
-		          <table>
-		          	<tr>
-		          		<td colspan="9" >
-		          			<h3 style="text-align: right; padding-right: 5px;">Max Carry Wt</h3>
-		          		</td>
-		          		<td>
-		          			<input type="number" min="0" name="attr_max_carry_wt" style="font-size: 12px; text-align: center;" />
-		          		</td>
-		          	</tr>
-		          </table>
-
-		          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
-			          <table>
-			          	<tr>
-			          		<td colspan="5">
-			          			<h3 style="text-align: left;">Item</h3>
-			          		</td>
-			          		<td>
-			          			<h3 style="text-align: right;">WT</h3>
-			          		</td>
-			          	</tr>
-			          </table>
-		      	  </div>
-		          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
-			          <table>
-			          	<tr>
-			          		<td colspan="5">
-			          			<h3 style="text-align: left;">Item</h3>
-			          		</td>
-			          		<td>
-			          			<h3 style="text-align: right;">WT</h3>
-			          		</td>
-			          	</tr>
-			          </table>
-		      	  </div>
-		          <fieldset class="repeating_inventoryitems" style="border: 0;">
-			          <table border="2px">
-			          	<tr>
-			          		<td colspan="5">
-			          			<input type="text" name="attr_inventoryitem_name" style="font-size: 14px">
-			          		</td>
-			          		<td>
-			          			<input type="number" min="0" name="attr_inventoryitem_wt" style="font-size: 14px">
-			          		</td>
-			          	</tr>
-			          	<tr>
-			          		<td colspan="6"><textarea name="attr_inventoryitem_desc"></textarea></td>
-			          	</tr>
-			          </table>
-		          </fieldset>
-		        </div>
-		    </li>
-
-		    <li>
-		        <input type="radio" name="tabs" class="sheet-nstab" id="tab3" />
-		        <label for="tab3"
-		               role="tab" 
-		               aria-selected="false" 
-		               aria-controls="panel3" 
-		               tabindex="2">Talents</label>
-		        <div id="tab-content3" 
-		             class="tab-content"
-		             role="tabpanel" 
-		             aria-labelledby="specification" 
-		             aria-hidden="true">
-		        	
-		        	<table>
-		        		<tr>
-		        			<td>
-		        				<h3 style="text-align: left">Ranks</h3>
-		        			</td>
-		        			<td colspan="7">
-		        				<h3 style="text-align: center">Talent</h3>
-		        			</td>
-		        		</tr>
-		        	</table>
-
-		        	<fieldset class="repeating_talents">
+			       		<hr />
 			        	<table>
 			        		<tr>
-			        			<td rowspan="2">
-			        				<input type="number" min="0" max="3" name="attr_talent_ranks" style="text-align: center; width: 100%; height:100%; font-size:32px">
+			        			<td colspan="7">
+			        				<h3 style="text-align: left;">Weapon</h3>
+			        			</td>
+			        			<td colspan="5">
+			        				<h3 style="text-align: center;">Type</h3>
+			        			</td>
+			        		</tr>
+			        	</table>
+
+			        	<fieldset class="repeating_weapons" style="border: none; padding: 0; margin: 0">
+			        		<div class="repeatingitemheaderskip">
+					        	<hr />
+					        	<table>
+					        		<tr>
+					        			<td colspan="7">
+					        				<h3 style="text-align: left;">Weapon</h3>
+					        			</td>
+					        			<td colspan="5">
+					        				<h3 style="text-align: center;">Type</h3>
+					        			</td>
+					        		</tr>
+				        		</table>
+				        	</div>
+
+				        	<table>
+				        		<tr>
+				        			<td colspan="7">
+				        				<input type="text" name="attr_weaponname" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Melee%20Icon.svg" width="32px" height="32px" alt="Melee" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_melee" value="melee" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Unarmed%20Icon.svg" width="32px" height="32px" alt="Unarmed" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_unarmed" value="unarmed" alt="Unarmed"/>
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Ballistic%20Icon.svg" width="32px" height="32px" alt="Ballistic" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_ballistic" value="ballistic" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Energy%20Icon.svg" width="32px" height="32px" alt="Energy" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_energy" value="energy" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Immolative%20Icon.svg" width="32px" height="32px" alt="Immolative" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_immolative" value="immolative" />
+				        			</td>
+				        		</tr>
+				        		<tr>
+				        			<td colspan="12">
+				        				<table border="2px">
+				        					<tr>
+				        						<td>
+				        							<h3>Base Dice</h3>
+				        							<input type="number" min="0" name="attr_weaponbasedice" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        							<h3>Damage</h3>
+				        							<input type="text" name="attr_weapondamage" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        							<h3>AP Dice</h3>
+				        							<input type="number" min="0" name="attr_weaponap" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        						<h3>WT</h3>
+				        							<input type="number" min="0" name="attr_weaponweight" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        							<h3>Upkeep</h3>
+				        							<input type="number" min="0" step="10" name="attr_weaponupkeep" style="font-size: 16px; text-align: center; width: 100%; height: 32px;"> <br/>
+				        							<table><tr><td colspan="4"><h3>Depleted</h3></td><td><input type="checkbox" name="attr_weapondepleted"></td></tr></table>
+				        						</td>
+				        					</tr>
+				        				</table>
+				        			</td>
+				        		</tr>
+				        		<tr>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Accelerator%20Icon.svg" width="32px" height="32px" alt="Accelerator" />
+				        				<input type="checkbox" name="attr_weapon_accelerator" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Stabilizer%20Icon.svg" width="32px" height="32px" alt="Stabilizer" />
+				        				<input type="checkbox" name="attr_weapon_stabilizer" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Hardened%20Icon.svg" width="32px" height="32px" alt="Hardened" />
+				        				<input type="checkbox" name="attr_weapon_hardened" />
+				        			</td>
+				        			<td colspan="9">
+				        				<textarea name="attr_weapondesc"></textarea>
+				        			</td>
+				        		</tr>
+				        	</table>
+			        	</fieldset>
+			        </div>
+			    </li>
+			  
+			    <li>
+			        <input type="radio" name="tabs" class="sheet-nstab" id="tab2" />
+			        <label for="tab2"
+			               role="tab" 
+			               aria-selected="false" 
+			               aria-controls="panel2" 
+			               tabindex="1">Inventory</label>
+			        <div id="tab-content2" 
+			             class="tab-content"
+			             role="tabpanel" 
+			             aria-labelledby="specification" 
+			             aria-hidden="true">
+			          <table>
+			          	<tr>
+			          		<td colspan="3">
+			          			<h3 style="text-align: left">Unicreds</h3>
+			          			<input type="number" name="attr_unicreds" style="font-size: 32px; text-align: center;" step="10"/>
+			          		</td>
+			          		<td colspan="2" style="text-align: center">
+
+			          			<table>
+			          				<tr>
+			          					<td colspan=5><img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/MSM%20Icon.svg" width="32px" height="32px" alt="MSM"/></td>
+			          				</tr>
+			          				<tr>
+			          					<td colspan=4>
+			          						<input type="range" name="attr_inventory_msm" min="0" max="5" style="width: 90%; display: block; margin-left: 5%;"/>
+			          						<table style="font-size:10px; position: relative; top: -4px;"><tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr></table>
+			          					</td>
+			          					<td colspan=2>
+			          						<input type="number" name="attr_inventory_msm" min="0" max="5" style="font-size: 24px; text-align: center;"/>
+			          					</td>
+			          				</tr>
+			          			</table>
+
+			          		</td>
+			          	</tr>
+			          </table>
+			          <hr />
+
+			          <table>
+			          	<tr>
+			          		<td colspan="9" >
+			          			<h3 style="text-align: right; padding-right: 5px;">Max Carry Wt</h3>
+			          		</td>
+			          		<td>
+			          			<input type="number" min="0" name="attr_max_carry_wt" style="font-size: 12px; text-align: center;" />
+			          		</td>
+			          	</tr>
+			          </table>
+
+			          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
+				          <table>
+				          	<tr>
+				          		<td colspan="5">
+				          			<h3 style="text-align: left;">Item</h3>
+				          		</td>
+				          		<td>
+				          			<h3 style="text-align: right;">WT</h3>
+				          		</td>
+				          	</tr>
+				          </table>
+			      	  </div>
+			          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
+				          <table>
+				          	<tr>
+				          		<td colspan="5">
+				          			<h3 style="text-align: left;">Item</h3>
+				          		</td>
+				          		<td>
+				          			<h3 style="text-align: right;">WT</h3>
+				          		</td>
+				          	</tr>
+				          </table>
+			      	  </div>
+			          <fieldset class="repeating_inventoryitems" style="border: 0;">
+				          <table border="2px">
+				          	<tr>
+				          		<td colspan="5">
+				          			<input type="text" name="attr_inventoryitem_name" style="font-size: 14px">
+				          		</td>
+				          		<td>
+				          			<input type="number" min="0" name="attr_inventoryitem_wt" style="font-size: 14px">
+				          		</td>
+				          	</tr>
+				          	<tr>
+				          		<td colspan="6"><textarea name="attr_inventoryitem_desc"></textarea></td>
+				          	</tr>
+				          </table>
+			          </fieldset>
+			        </div>
+			    </li>
+
+			    <li>
+			        <input type="radio" name="tabs" class="sheet-nstab" id="tab3" />
+			        <label for="tab3"
+			               role="tab" 
+			               aria-selected="false" 
+			               aria-controls="panel3" 
+			               tabindex="2">Talents</label>
+			        <div id="tab-content3" 
+			             class="tab-content"
+			             role="tabpanel" 
+			             aria-labelledby="specification" 
+			             aria-hidden="true">
+			        	
+			        	<table>
+			        		<tr>
+			        			<td>
+			        				<h3 style="text-align: left">Ranks</h3>
 			        			</td>
 			        			<td colspan="7">
-			        				<input type="text" name="attr_talent_name">
+			        				<h3 style="text-align: center">Talent</h3>
+			        			</td>
+			        		</tr>
+			        	</table>
+
+			        	<fieldset class="repeating_talents">
+				        	<table>
+				        		<tr>
+				        			<td rowspan="2">
+				        				<input type="number" min="0" max="3" name="attr_talent_ranks" style="text-align: center; width: 100%; height:100%; font-size:32px">
+				        			</td>
+				        			<td colspan="7">
+				        				<input type="text" name="attr_talent_name">
+				        			</td>
+				        		</tr>
+				        		<tr>
+				        			<td colspan="7">
+				        				<textarea name="attr_talent_desc"></textarea>
+				        			</td>
+				        		</tr>
+				        	</table>
+			        	</fieldset>
+			        </div>
+			    </li>
+
+			    <li>
+			        <input type="radio" name="tabs" class="sheet-nstab" id="tab4" />
+			        <label for="tab4"
+			               role="tab" 
+			               aria-selected="false" 
+			               aria-controls="panel4" 
+			               tabindex="3">Lifestyle</label>
+			        <div id="tab-content4" 
+			             class="tab-content"
+			             role="tabpanel" 
+			             aria-labelledby="specification" 
+			             aria-hidden="true">
+
+			          <table border="2px">
+			          	<tr>
+			          		<td rowspan="2" style="vertical-align: top;">
+			          			<h3 style="text-align: center;">Upkeep</h3>
+			          			<input type="number" name="attr_lifestyle_upkeep" step="10" style="font-size: 24px; width: 100%; text-align: center">
+			          		</td>
+			          		<td colspan="7">
+			          			<h3 style="text-align: center;">Lifestyle</h3>
+			          			<input type="text" name="attr_lifestyle_name">
+			          		</td>
+			          	</tr>
+			          	<tr>
+			          		<td colspan="7">
+			          			<textarea name="attr_lifestyle_desc"></textarea>
+			          		</td>
+			          	</tr>
+			          </table>
+
+			          <hr />
+
+			          <table>
+			          	<tr>
+			          		<td colspan="10" style="text-align: center">
+
+			          			<table>
+			          				<tr>
+			          					<td colspan=8><img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/MSM%20Icon.svg" width="32px" height="32px" alt="MSM"/></td>
+			          				</tr>
+			          				<tr>
+			          					<td colspan=7>
+			          						<input type="range" name="attr_storage_msm" min="0" max="10" style="width: 95%; display: block; margin-left: 2.5%;"/>
+			          						<table style="font-size:10px; position: relative; top: -4px;"><tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr></table>
+			          					</td>
+			          					<td>
+			          						<input type="number" name="attr_storage_msm" min="0" max="10" style="font-size: 24px; text-align: center;"/>
+			          					</td>
+			          				</tr>
+			          			</table>
+
+			          		</td>
+			          	</tr>
+			          	<tr>
+			          		<td colspan="9" >
+			          			<h3 style="text-align: right; padding-right: 5px;">Max Storage Wt</h3>
+			          		</td>
+			          		<td>
+			          			<input type="number" name="attr_max_storage_wt" style="font-size: 12px; text-align: center;" />
+			          		</td>
+			          	</tr>
+			          </table>
+
+			          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
+				          <table>
+				          	<tr>
+				          		<td colspan="5">
+				          			<h3 style="text-align: left;">Storage</h3>
+				          		</td>
+				          		<td>
+				          			<h3 style="text-align: right;">WT</h3>
+				          		</td>
+				          	</tr>
+				          </table>
+			      	  </div>
+			          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
+				          <table>
+				          	<tr>
+				          		<td colspan="5">
+				          			<h3 style="text-align: left;">Storage</h3>
+				          		</td>
+				          		<td>
+				          			<h3 style="text-align: right;">WT</h3>
+				          		</td>
+				          	</tr>
+				          </table>
+			      	  </div>
+			          <fieldset class="repeating_storageitems" style="border: 0;">
+				          <table border="2px">
+				          	<tr>
+				          		<td colspan="5">
+				          			<input type="text" name="attr_storageitem_name" style="font-size: 14px">
+				          		</td>
+				          		<td>
+				          			<input type="number" name="attr_storageitem_wt" style="font-size: 14px">
+				          		</td>
+				          	</tr>
+				          	<tr>
+				          		<td colspan="6"><textarea name="attr_storageitem_desc"></textarea></td>
+				          	</tr>
+				          </table>
+			          </fieldset>
+
+			          <hr />
+
+			          <h3>Ride</h3>
+
+			          <input type="text" name="attr_ride_name" style="width:100%">
+
+			          <table border="2px">
+			          	<tr>
+			          		<td colspan="2">
+			          			<h3>Upkeep</h3>
+			          			<input type="number" step="10" name="attr_ride_upkeep" style="font-size: 16px; text-align: center; width: 100%; height: 32px;">
+			          		</td>
+			          		<td>
+			          			<h3>Cyber</h3>
+			          			<input type="number" name="attr_ride_cyber" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+			          		</td>
+			          		<td colspan="4">
+			          			<h3>Frame</h3>
+			          			<input type="number" name="attr_ride_frame_wt" style="font-size: 16px; text-align: center; width: 50px; height: 32px;"> <input type="text" name="attr_ride_frame_type" style="font-size: 16px; text-align: center; width: calc(100% - 60px); height: 32px;">
+			          		</td>
+			          		<td colspan="3">
+			          			<h3>Special</h3>
+			          			<select name="attr_ride_special">
+			          				<option value="">-&nbsp;-</option>
+			          				<option value="armored">Armored</option>
+			          				<option value="hardened">Hardened</option>
+			          				<option value="nimble">Nimble</option>
+			          			</select>
+			          		</td>
+			          	</tr>
+			          </table>
+
+			          <table>
+			          	<tr>
+			          		<td colspan="5">
+			          			<h3 style="text-align: left;">Emplacements</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">WT</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">Type</h3>
+			          		</td>
+			          		<td >
+			          			<h3 style="text-align: center;">Dmg</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">AP</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">Mod</h3>
+			          		</td>
+			          	</tr>
+			          </table>
+
+			          <fieldset class="repeating_emplacements">
+			          	<table>
+				          	<tr>
+				          		<td colspan="5">
+				          			<input type="text" name="attr_emplacement_name"/>
+				          		</td>
+				          		<td>
+				          			<input type="number" name="attr_emplacement_wt" style="width: 100%; font-size: 18px; text-align: center"/>
+				          		</td>
+				          		<td>
+				          			<select class="dmgtype" name="attr_emplacement_type">
+				          				<option value="ballistic" >Ballistic</option>
+				          				<option value="energy" >Energy</option>
+				          				<option value="immolative" >Immolative</option>
+				          			</select>
+				          		</td>
+				          		<td>
+				          			<input type="text" name="attr_emplacement_dmg" style="width: 100%; font-size: 18px; text-align: center"/>
+				          		</td>
+				          		<td>
+				          			<input type="number" name="attr_emplacement_ap" style="width: 100%; font-size: 18px; text-align: center"/>
+				          		</td>
+				          		<td>
+				          			<select class="modtype" name="attr_emplacement_mod">
+				          				<option value="">-&nbsp;-</option>
+				          				<option value="accelerator">Accelerator</option>
+				          				<option value="stabilizer">Stabilizer</option>
+				          				<option value="hardened">Hardened</option>
+				          			</select>
+				          		</td>
+				          	</tr>
+			          	</table>
+			          </fieldset>
+			        </div>
+			    </li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="sheet-vehicle" class="ns-sheettype">
+		<h2><span name="attr_character_name"></span></h2>
+	    <div class="sheet-nsstatsection">
+	    	<table>
+	    		<tr>
+	    			<td style="text-align: right;">Frame:</td>
+	    			<td><input name="attr_tough" type="number" min="0" style="text-align: center; font-size: 16px"/></td>
+	    			<td style="text-align: right;">Damage:</td>
+	    			<td><input name="attr_wound" type="number" min="0" style="text-align: center; font-size: 16px"/></td>
+	    		</tr>
+	    		<tr>
+	    			<td style="text-align: right;">Cyber:</td>
+	    			<td><input name="attr_cyber" type="number" min="0" style="text-align: center; font-size: 16px"/></td>
+	    			<td style="text-align: right;">Feature:</td>
+	    			<td> 			          			
+	    				<select name="attr_ride_special">
+			          				<option value="">-&nbsp;-</option>
+			          				<option value="armored">Armored</option>
+			          				<option value="hardened">Hardened</option>
+			          				<option value="nimble">Nimble</option>
+			          	</select>
+			        </td>
+	    		</tr>
+	    	</table>
+
+	    	<hr />
+
+	    	<table>
+			          	<tr>
+			          		<td colspan="5">
+			          			<h3 style="text-align: left;">Emplacements</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">WT</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">Type</h3>
+			          		</td>
+			          		<td >
+			          			<h3 style="text-align: center;">Dmg</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">AP</h3>
+			          		</td>
+			          		<td>
+			          			<h3 style="text-align: center;">Mod</h3>
+			          		</td>
+			          	</tr>
+			          </table>
+
+			          <fieldset class="repeating_emplacements">
+			          	<table>
+				          	<tr>
+				          		<td colspan="5">
+				          			<input type="text" name="attr_emplacement_name"/>
+				          		</td>
+				          		<td>
+				          			<input type="number" name="attr_emplacement_wt" style="width: 100%; font-size: 18px; text-align: center"/>
+				          		</td>
+				          		<td>
+				          			<select class="dmgtype" name="attr_emplacement_type">
+				          				<option value="ballistic" >Ballistic</option>
+				          				<option value="energy" >Energy</option>
+				          				<option value="immolative" >Immolative</option>
+				          			</select>
+				          		</td>
+				          		<td>
+				          			<input type="text" name="attr_emplacement_dmg" style="width: 100%; font-size: 18px; text-align: center"/>
+				          		</td>
+				          		<td>
+				          			<input type="number" name="attr_emplacement_ap" style="width: 100%; font-size: 18px; text-align: center"/>
+				          		</td>
+				          		<td>
+				          			<select class="modtype" name="attr_emplacement_mod">
+				          				<option value="">-&nbsp;-</option>
+				          				<option value="accelerator">Accelerator</option>
+				          				<option value="stabilizer">Stabilizer</option>
+				          				<option value="hardened">Hardened</option>
+				          			</select>
+				          		</td>
+				          	</tr>
+			          	</table>
+			          </fieldset>
+	    </div>
+	</div>
+
+	<div id="sheet-bot" class="ns-sheettype">
+		<h2><span name="attr_character_name"></span></h2>
+		<div class="sheet-nsstatsection">
+			<table>
+	    		<tr>
+	    			<td style="text-align: right;">Frame:</td>
+	    			<td><input name="attr_tough" type="number" min="0" style="text-align: center; font-size: 16px"/></td>
+	    			<td style="text-align: right;">Damage:</td>
+	    			<td><input name="attr_wound" type="number" min="0" style="text-align: center; font-size: 16px"/></td>
+	    		</tr>
+	    		<tr>
+	    			<td style="text-align: right;">Cyber:</td>
+	    			<td><input name="attr_cyber" type="number" min="0" style="text-align: center; font-size: 16px"/></td>
+	    			<td style="text-align: right;">Feature:</td>
+	    			<td> 			          			
+	    				<select name="attr_ride_special">
+			          				<option value="">-&nbsp;-</option>
+			          				<option value="armored">Armored</option>
+			          				<option value="hardened">Hardened</option>
+			          				<option value="nimble">Nimble</option>
+			          	</select>
+			        </td>
+	    		</tr>
+	    		<tr>
+	    			<td style="text-align: right;"> Mobility:</td>
+	    			<td> 			          			
+	    				<select name="attr_bot_mobility">
+			          				<option value="stationary">Stationary</option>
+			          				<option value="ground">Ground</option>
+			          				<option value="flying">Flying</option>
+			          	</select>
+			        </td>
+	    		</tr>
+	    	</table>
+
+	    	<hr />
+
+	    	<table>
+			        		<tr>
+			        			<td colspan="7">
+			        				<h3 style="text-align: left;">Armor</h3>
+			        			</td>
+			        			<td colspan="2">
+			        				<h3>WT</h3>
+			        			</td>
+			        			<td colspan="3">
+			        				<h3 style="text-align: center;">Type</h3>
 			        			</td>
 			        		</tr>
 			        		<tr>
 			        			<td colspan="7">
-			        				<textarea name="attr_talent_desc"></textarea>
+			        				<input type="text" name="attr_armorname" />
+			        			</td>
+			        			<td colspan="2" style="background-image: url('https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Shield%20Icon.svg'); background-size: 64px; background-repeat: no-repeat; background-position: center;">
+			        				<input type="number" min="0" name="attr_armorwt" style="font-size: 16px; text-align: center; width: 50px; height: 32px; background: none"/>
+			        			</td>
+			        			<td style="text-align: center;">
+			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Ballistic%20Icon.svg" width="32px" height="32px" alt="Ballistic"/>
+			        				<input type="radio" name="attr_armortype" id="armor_ballistic" value="ballistic" />
+			        			</td>
+			        			<td>
+			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Energy%20Icon.svg" width="32px" height="32px" alt="Energy"/>
+			        				<input type="radio" name="attr_armortype" id="armor_energy" value="energy" />
+			        			</td>
+			        			<td>
+			        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Immolative%20Icon.svg" width="32px" height="32px" alt="Immolative"/>
+			        				<input type="radio" name="attr_armortype" id="armor_immolative" value="immolative" />
+			        			</td>
+			        		</tr>
+			        		<tr>
+			        			<td colspan="12">
+			        				<textarea name="attr_armordesc"></textarea>
 			        			</td>
 			        		</tr>
 			        	</table>
-		        	</fieldset>
-		        </div>
-		    </li>
+			       		<hr />
+			        	<table>
+			        		<tr>
+			        			<td colspan="7">
+			        				<h3 style="text-align: left;">Weapon</h3>
+			        			</td>
+			        			<td colspan="5">
+			        				<h3 style="text-align: center;">Type</h3>
+			        			</td>
+			        		</tr>
+			        	</table>
 
-		    <li>
-		        <input type="radio" name="tabs" class="sheet-nstab" id="tab4" />
-		        <label for="tab4"
-		               role="tab" 
-		               aria-selected="false" 
-		               aria-controls="panel4" 
-		               tabindex="3">Lifestyle</label>
-		        <div id="tab-content4" 
-		             class="tab-content"
-		             role="tabpanel" 
-		             aria-labelledby="specification" 
-		             aria-hidden="true">
+			        	<fieldset class="repeating_weapons" style="border: none; padding: 0; margin: 0">
+			        		<div class="repeatingitemheaderskip">
+					        	<hr />
+					        	<table>
+					        		<tr>
+					        			<td colspan="7">
+					        				<h3 style="text-align: left;">Weapon</h3>
+					        			</td>
+					        			<td colspan="5">
+					        				<h3 style="text-align: center;">Type</h3>
+					        			</td>
+					        		</tr>
+				        		</table>
+				        	</div>
 
-		          <table border="2px">
-		          	<tr>
-		          		<td rowspan="2" style="vertical-align: top;">
-		          			<h3 style="text-align: center;">Upkeep</h3>
-		          			<input type="number" name="attr_lifestyle_upkeep" step="10" style="font-size: 24px; width: 100%; text-align: center">
-		          		</td>
-		          		<td colspan="7">
-		          			<h3 style="text-align: center;">Lifestyle</h3>
-		          			<input type="text" name="attr_lifestyle_name">
-		          		</td>
-		          	</tr>
-		          	<tr>
-		          		<td colspan="7">
-		          			<textarea name="attr_lifestyle_desc"></textarea>
-		          		</td>
-		          	</tr>
-		          </table>
-
-		          <hr />
-
-		          <table>
-		          	<tr>
-		          		<td colspan="10" style="text-align: center">
-
-		          			<table>
-		          				<tr>
-		          					<td colspan=8><img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/MSM%20Icon.svg" width="32px" height="32px" alt="MSM"/></td>
-		          				</tr>
-		          				<tr>
-		          					<td colspan=7>
-		          						<input type="range" name="attr_storage_msm" min="0" max="10" style="width: 95%; display: block; margin-left: 2.5%;"/>
-		          						<table style="font-size:10px; position: relative; top: -4px;"><tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr></table>
-		          					</td>
-		          					<td>
-		          						<input type="number" name="attr_storage_msm" min="0" max="10" style="font-size: 24px; text-align: center;"/>
-		          					</td>
-		          				</tr>
-		          			</table>
-
-		          		</td>
-		          	</tr>
-		          	<tr>
-		          		<td colspan="9" >
-		          			<h3 style="text-align: right; padding-right: 5px;">Max Storage Wt</h3>
-		          		</td>
-		          		<td>
-		          			<input type="number" name="attr_max_storage_wt" style="font-size: 12px; text-align: center;" />
-		          		</td>
-		          	</tr>
-		          </table>
-
-		          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
-			          <table>
-			          	<tr>
-			          		<td colspan="5">
-			          			<h3 style="text-align: left;">Storage</h3>
-			          		</td>
-			          		<td>
-			          			<h3 style="text-align: right;">WT</h3>
-			          		</td>
-			          	</tr>
-			          </table>
-		      	  </div>
-		          <div style="display: inline-block; width: 45%; margin:0; padding-left: 2%; padding-right: 2%;">
-			          <table>
-			          	<tr>
-			          		<td colspan="5">
-			          			<h3 style="text-align: left;">Storage</h3>
-			          		</td>
-			          		<td>
-			          			<h3 style="text-align: right;">WT</h3>
-			          		</td>
-			          	</tr>
-			          </table>
-		      	  </div>
-		          <fieldset class="repeating_storageitems" style="border: 0;">
-			          <table border="2px">
-			          	<tr>
-			          		<td colspan="5">
-			          			<input type="text" name="attr_storageitem_name" style="font-size: 14px">
-			          		</td>
-			          		<td>
-			          			<input type="number" name="attr_storageitem_wt" style="font-size: 14px">
-			          		</td>
-			          	</tr>
-			          	<tr>
-			          		<td colspan="6"><textarea name="attr_storageitem_desc"></textarea></td>
-			          	</tr>
-			          </table>
-		          </fieldset>
-
-		          <hr />
-
-		          <h3>Ride</h3>
-
-		          <input type="text" name="attr_ride_name" style="width:100%">
-
-		          <table border="2px">
-		          	<tr>
-		          		<td colspan="2">
-		          			<h3>Upkeep</h3>
-		          			<input type="number" step="10" name="attr_ride_upkeep" style="font-size: 16px; text-align: center; width: 100%; height: 32px;">
-		          		</td>
-		          		<td>
-		          			<h3>Cyber</h3>
-		          			<input type="number" name="attr_ride_cyber" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
-		          		</td>
-		          		<td colspan="4">
-		          			<h3>Frame</h3>
-		          			<input type="number" name="attr_ride_frame_wt" style="font-size: 16px; text-align: center; width: 50px; height: 32px;"> <input type="text" name="attr_ride_frame_type" style="font-size: 16px; text-align: center; width: calc(100% - 60px); height: 32px;">
-		          		</td>
-		          		<td colspan="3">
-		          			<h3>Special</h3>
-		          			<select name="attr_ride_special">
-		          				<option value="">-&nbsp;-</option>
-		          				<option value="armored">Armored</option>
-		          				<option value="hardened">Hardened</option>
-		          				<option value="nimble">Nimble</option>
-		          			</select>
-		          		</td>
-		          	</tr>
-		          </table>
-
-		          <table>
-		          	<tr>
-		          		<td colspan="5">
-		          			<h3 style="text-align: left;">Emplacements</h3>
-		          		</td>
-		          		<td>
-		          			<h3 style="text-align: center;">WT</h3>
-		          		</td>
-		          		<td>
-		          			<h3 style="text-align: center;">Type</h3>
-		          		</td>
-		          		<td >
-		          			<h3 style="text-align: center;">Dmg</h3>
-		          		</td>
-		          		<td>
-		          			<h3 style="text-align: center;">AP</h3>
-		          		</td>
-		          		<td>
-		          			<h3 style="text-align: center;">Mod</h3>
-		          		</td>
-		          	</tr>
-		          </table>
-
-		          <fieldset class="repeating_emplacements">
-		          	<table>
-			          	<tr>
-			          		<td colspan="5">
-			          			<input type="text" name="attr_emplacement_name"/>
-			          		</td>
-			          		<td>
-			          			<input type="number" name="attr_emplacement_wt" style="width: 100%; font-size: 18px; text-align: center"/>
-			          		</td>
-			          		<td>
-			          			<select class="dmgtype" name="attr_emplacement_type">
-			          				<option value="ballistic" >Ballistic</option>
-			          				<option value="energy" >Energy</option>
-			          				<option value="immolative" >Immolative</option>
-			          			</select>
-			          		</td>
-			          		<td>
-			          			<input type="text" name="attr_emplacement_dmg" style="width: 100%; font-size: 18px; text-align: center"/>
-			          		</td>
-			          		<td>
-			          			<input type="number" name="attr_emplacement_ap" style="width: 100%; font-size: 18px; text-align: center"/>
-			          		</td>
-			          		<td>
-			          			<select class="modtype" name="attr_emplacement_mod">
-			          				<option value="">-&nbsp;-</option>
-			          				<option value="accelerator">Accelerator</option>
-			          				<option value="stabilizer">Stabilizer</option>
-			          				<option value="hardened">Hardened</option>
-			          			</select>
-			          		</td>
-			          	</tr>
-		          	</table>
-		          </fieldset>
-		        </div>
-		    </li>
-		</ul>
+				        	<table>
+				        		<tr>
+				        			<td colspan="7">
+				        				<input type="text" name="attr_weaponname" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Melee%20Icon.svg" width="32px" height="32px" alt="Melee" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_melee" value="melee" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Unarmed%20Icon.svg" width="32px" height="32px" alt="Unarmed" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_unarmed" value="unarmed" alt="Unarmed"/>
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Ballistic%20Icon.svg" width="32px" height="32px" alt="Ballistic" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_ballistic" value="ballistic" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Energy%20Icon.svg" width="32px" height="32px" alt="Energy" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_energy" value="energy" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Immolative%20Icon.svg" width="32px" height="32px" alt="Immolative" />
+				        				<input type="radio" name="attr_weapontype" id="weapon_immolative" value="immolative" />
+				        			</td>
+				        		</tr>
+				        		<tr>
+				        			<td colspan="12">
+				        				<table border="2px">
+				        					<tr>
+				        						<td>
+				        							<h3>Base Dice</h3>
+				        							<input type="number" min="0" name="attr_weaponbasedice" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        							<h3>Damage</h3>
+				        							<input type="text" name="attr_weapondamage" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        							<h3>AP Dice</h3>
+				        							<input type="number" min="0" name="attr_weaponap" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        						<h3>WT</h3>
+				        							<input type="number" min="0" name="attr_weaponweight" style="font-size: 16px; text-align: center; width: 50px; height: 32px;">
+				        						</td>
+				        						<td>
+				        							<h3>Upkeep</h3>
+				        							<input type="number" min="0" step="10" name="attr_weaponupkeep" style="font-size: 16px; text-align: center; width: 100%; height: 32px;"> <br/>
+				        							<table><tr><td colspan="4"><h3>Depleted</h3></td><td><input type="checkbox" name="attr_weapondepleted"></td></tr></table>
+				        						</td>
+				        					</tr>
+				        				</table>
+				        			</td>
+				        		</tr>
+				        		<tr>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Accelerator%20Icon.svg" width="32px" height="32px" alt="Accelerator" />
+				        				<input type="checkbox" name="attr_weapon_accelerator" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Stabilizer%20Icon.svg" width="32px" height="32px" alt="Stabilizer" />
+				        				<input type="checkbox" name="attr_weapon_stabilizer" />
+				        			</td>
+				        			<td style="text-align: center;">
+				        				<img src="https://raw.githubusercontent.com/DoctorAxiom/NeonSkies-for-Roll20/7d6f08f7467dceff1acad4db4f29317c5a45b9b1/Hardened%20Icon.svg" width="32px" height="32px" alt="Hardened" />
+				        				<input type="checkbox" name="attr_weapon_hardened" />
+				        			</td>
+				        			<td colspan="9">
+				        				<textarea name="attr_weapondesc"></textarea>
+				        			</td>
+				        		</tr>
+				        	</table>
+			        	</fieldset>
+	    </div>
 	</div>
-
 
 </div>
 

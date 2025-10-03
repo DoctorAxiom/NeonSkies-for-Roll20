@@ -16,6 +16,22 @@ $tabs-base-bg: #ededed;
     font-weight: 400;
     font-style: normal;
 
+    div.ns-sheettype {
+        display: none;
+    }
+
+    select.ns-sheettype:has(> option[value="sheet-pc"]:checked) ~ div.ns-sheettype[id="sheet-pc"]{
+        display: inherit;
+    }
+
+    select.ns-sheettype:has(> option[value="sheet-bot"]:checked) ~ div.ns-sheettype[id="sheet-bot"]{
+        display: inherit;
+    }
+
+    select.ns-sheettype:has(> option[value="sheet-vehicle"]:checked) ~ div.ns-sheettype[id="sheet-vehicle"]{
+        display: inherit;
+    }
+
     h2 {
         z-index: 4;
         display: block;
